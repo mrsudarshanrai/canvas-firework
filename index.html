@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        font-family: monospace;
+      }
+
+      canvas {
+        background-color: black;
+      }
+      #fps {
+        position: absolute;
+        top: 0;
+        color: #29fa33;
+        font-size: 1.6vw;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="fps">FPS: 0</p>
+    <canvas id="canvas"></canvas>
+    <script src="./src/dist/app.js"></script>
+  </body>
+</html>
