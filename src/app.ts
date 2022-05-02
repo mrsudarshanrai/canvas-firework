@@ -21,6 +21,7 @@ class FireWorks implements IFireworks {
   size: number;
   color: string;
   constructor(x: number, y: number) {
+    hue += 1;
     this.x = x;
     this.y = y;
     this.speedX = Math.random() * 4 - 1.5;
@@ -33,6 +34,7 @@ class FireWorks implements IFireworks {
     this.x += this.speedX;
     this.y += this.speedY;
     if (this.size > 0.2) this.size -= 0.1; // descrease size by 0.1
+    hue += 1;
   }
 
   draw() {

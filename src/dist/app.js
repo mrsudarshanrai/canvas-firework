@@ -8,6 +8,7 @@ let hue = 0; // for hue color
 let time = 0; //  for fps
 class FireWorks {
     constructor(x, y) {
+        hue += 1;
         this.x = x;
         this.y = y;
         this.speedX = Math.random() * 4 - 1.5;
@@ -20,6 +21,7 @@ class FireWorks {
         this.y += this.speedY;
         if (this.size > 0.2)
             this.size -= 0.1; // descrease size by 0.1
+        hue += 1;
     }
     draw() {
         context.fillStyle = this.color;
